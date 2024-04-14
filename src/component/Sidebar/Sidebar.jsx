@@ -70,7 +70,7 @@ export default function Sidebar() {
               <MenuIcon className={SidebarStyles.menuIcon} />
             ) : (
               <>
-                <img src="../../../public/assets/Picture.jpg" alt="User" />
+                <img src="../../../public/Picture.jpg" alt="User" />
                 <span>Muhammad Faizan</span>
                 <p className={SidebarStyles.userDescription}>MERN Stack Dev</p>
                 <div className={SidebarStyles.socialMediaIcons}>
