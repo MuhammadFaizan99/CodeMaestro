@@ -10,6 +10,7 @@ import "react-pro-sidebar/dist/css/styles.css";
 import { Link, useNavigate } from "react-router-dom";
 import SidebarStyles from "./Sidebar.module.css";
 import { jwtDecode } from "jwt-decode";
+import ProfileImg from "../../../public/assets/Picture.jpg"
 
 // Import Material-UI icons
 import HomeIcon from "@mui/icons-material/Home";
@@ -70,7 +71,7 @@ export default function Sidebar() {
               <MenuIcon className={SidebarStyles.menuIcon} />
             ) : (
               <>
-                <img src="../../../public/Picture.jpg" alt="User" />
+                <img src={ProfileImg} alt="User" />
                 <span>Muhammad Faizan</span>
                 <p className={SidebarStyles.userDescription}>MERN Stack Dev</p>
                 <div className={SidebarStyles.socialMediaIcons}>
