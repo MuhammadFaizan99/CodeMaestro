@@ -1,0 +1,140 @@
+.container {
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+  opacity: 0.2; 
+  margin-left: 260px;
+  transform: translateX(0px);
+  transition: opacity 1s, transform 1s;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.965), rgba(255, 255, 255, 0.975)), url('../../../public/assets/dot-bg.png'); /* Replace 'path_to_your_image.jpg' with the actual path to your image */
+  background-repeat: no-repeat;
+  background-size: 100%; 
+}
+
+.container.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.header {
+  color: #2c3e50; 
+  font-size: 36px; 
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subHeader {
+  font-size: 20px; 
+  color: rgb(240, 174, 53); 
+  margin-bottom: 10px;
+}
+
+.horizontalLine {
+  width: 50px; 
+  height: 4px; 
+  background-color: #000;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.description {
+  color: #555555;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.service {
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s, transform 1s;
+}
+
+.service.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.serviceTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.progressBar {
+  position: relative;
+  width: 100%;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  height: 15px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.progress {
+  height: 100%;
+  border-radius: 5px;
+  background-color: rgb(240, 174, 53); 
+  width: 0;
+  transition: width 2s ease-in-out;
+  position: relative;
+}
+
+.progressText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 14px;
+}
+
+.cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  background-color: transparent;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.2s ease;
+}
+
+.cursorActive {
+  transform: scale(1.5);
+}
+@media (max-width: 700px) {
+  .container {
+    margin-left: 75px;
+    min-height: 825px;
+  }
+
+  .header {
+    font-size: 24px;
+  }
+
+  .subHeader {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .serviceTitle {
+    font-size: 20px;
+  }
+
+  .progressBar {
+    height: 17px;
+  }
+
+  .progressText {
+    font-size: 12px;
+  }
+}

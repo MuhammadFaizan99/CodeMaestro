@@ -1,0 +1,107 @@
+/* signup.module.css */
+
+.container {
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    margin-left: 260px;
+}
+
+.formContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form {
+    width: 100%;
+    max-width: 400px;
+}
+
+.formContainer h2 {
+    margin-bottom: 15px;
+    color: #222;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.formGroup {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.formGroup input {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    border-bottom: 2px solid #ddd;
+    background-color: transparent;
+    transition: border-color 0.3s ease;
+    padding-left: 40px;
+}
+
+.icon {
+    position: absolute;
+    top: 48%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: #555;
+}
+
+.submitButton {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(240, 174, 53);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+    background-color: rgb(237, 177, 65);
+}
+
+.imageContainer {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.formGroup label {
+    font-size: 18px;
+}
+
+.formGroup input {
+    border-bottom: 2px solid #aaa;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+@media screen and (max-width: 700px) {
+    .container {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 20px;
+        min-height: 750px;
+        margin-left: 81px;
+        
+    }
+    .imageContainer {
+        order: 1; 
+        justify-content: center;
+    }
+    .formContainer h2 {
+        display: none;
+    }
+
+    .formContainer {
+        order: 2;
+    }
+}

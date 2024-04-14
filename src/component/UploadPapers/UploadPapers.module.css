@@ -1,0 +1,113 @@
+/* uploadpapers.module.css */
+
+.container {
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    margin-left: 260px;
+}
+
+.formContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form {
+    width: 100%;
+    max-width: 400px;
+}
+
+.formContainer h2 {
+    margin-bottom: 15px;
+    color: #222;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.formGroup {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.formGroup label {
+    font-size: 16px;
+    color: #222;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input,
+.textarea,
+.fileInput {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+    border:2px solid #ddd;
+    background-color: transparent;
+    transition: border-color 0.3s ease;
+}
+.input:focus,
+.textarea:focus,
+.fileInput:focus {
+    background-color: #fdfdfd; 
+}
+
+.textarea {
+    height: 150px; /* Adjust height as needed */
+}
+
+.icon {
+    position: absolute;
+    top: 48%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: #555;
+}
+
+.submitButton {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(240, 174, 53);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+    background-color: rgb(237, 177, 65);
+}
+
+.imageContainer {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 700px) {
+    .container {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 20px;
+        min-height: 760px;
+        margin-left: 81px;
+    }
+    .imageContainer {
+        order: 1; 
+        justify-content: center;
+    }
+    .formContainer h2 {
+        display: none;
+    }
+
+    .formContainer {
+        order: 2;
+    }
+}

@@ -1,0 +1,187 @@
+/* Portfolio.module.css */
+
+.container {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+    transition: opacity 1s, transform 1s;
+    margin-left: 260px;
+}
+
+.header {
+    color: #2c3e50;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.subHeader {
+    font-size: 20px;
+    color: rgb(240, 174, 53);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.horizontalLine {
+    width: 50px;
+    height: 4px;
+    background-color: #000;
+    border: none;
+    margin: 0 auto 20px; 
+}
+
+.tabContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+}
+
+.tab:hover {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.activeTab {
+    background-color: rgb(240, 174, 53);
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.workSamplesContainer {
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.workSample {
+    flex: 0 0 calc(100% / 3);
+    max-width: calc(100% / 3);
+    margin-right: 15px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.workSample:last-child {
+    margin-right: 0;
+}
+
+.workSample img {
+    width: 100%;
+    height: 400px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.workSample:hover img {
+    transform: scale(1.1);
+}
+
+.projectName ,.projectSkill{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(240, 174, 53);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.workSample:hover .projectName,.workSample:hover .projectSkill {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sliderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.dot:hover, .activeDot {
+    background-color: #717171;
+}
+
+@media (max-width: 700px) {
+    .container {
+        margin-left: 81px;
+    }
+  
+    .header {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+  
+    .subHeader {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+  
+    .horizontalLine {
+      margin-bottom: 15px;
+    }
+  
+    .tabContainer {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+  
+    .tab {
+      max-width: calc(50% - 20px);
+      margin: 5px;
+      font-size: 14px;
+    }
+  
+    .workSample {
+      flex: 0 0 calc(100% - 0px);
+      max-width: calc(100% - 0px);
+      margin-bottom: 15px;
+    }
+  
+    .workSample img {
+        width: 100%;
+        height: 300px;
+        display: block;
+        transition: transform 0.3s ease;
+    }
+  
+    .projectName, .projectSkill {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .sliderContainer {
+      margin-top: 15px;
+    }
+  }
+  
