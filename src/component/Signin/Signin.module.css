@@ -96,11 +96,16 @@
         order: 1; 
         justify-content: center;
     }
+    .imageContainer img{
+        width: 200px;
+        height: auto;
+    }
     .formContainer h2 {
         display: none;
     }
 
     .formContainer {
         order: 2;
+        justify-content: flex-start;
     }
 }
