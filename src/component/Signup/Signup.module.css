@@ -89,13 +89,15 @@
         flex-direction: column;
         justify-content: flex-start;
         padding: 20px;
-        min-height: 750px;
         margin-left: 81px;
-        
     }
     .imageContainer {
         order: 1; 
         justify-content: center;
+    }
+    .imageContainer img{
+        width: 200px;
+        height: auto;
     }
     .formContainer h2 {
         display: none;
@@ -103,5 +105,6 @@
 
     .formContainer {
         order: 2;
+        justify-content: flex-start;
     }
 }
