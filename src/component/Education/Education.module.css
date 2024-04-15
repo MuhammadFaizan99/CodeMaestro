@@ -106,7 +106,9 @@
   .container {
     background-size: cover;
     margin-left: 81px;
+    margin-top: 50px;
     min-height: 620px;
+    border: 2px solid red;
   }
   .col .contents .box {
     width: 200px;
@@ -114,7 +116,7 @@
 
   .header {
     font-size: 28px;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 15px;
   }
 
