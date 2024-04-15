@@ -108,6 +108,9 @@
     margin-left: 81px;
     min-height: 620px;
   }
+  .col .contents .box {
+    width: 200px;
+  }
 
   .header {
     font-size: 28px;
