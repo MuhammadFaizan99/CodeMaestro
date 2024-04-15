@@ -107,4 +107,7 @@
         order: 2;
         justify-content: flex-start;
     }
+    .formGroup input::placeholder {
+        font-size: 14px;
+    }
 }
